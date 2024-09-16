@@ -1,4 +1,4 @@
-# Sort Colors (LeetCode Problem)
+# Sort Colors (LeetCode 75)
 
 ## Problem Description
 
