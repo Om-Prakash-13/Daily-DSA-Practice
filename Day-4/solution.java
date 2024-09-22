@@ -1,29 +1,19 @@
-import java.util.Arrays;
 class solution {
     public static int majorityElement(int[] arr) {
-        Arrays.sort(arr);
-        int b = 0;
-        int e = 0;
         int ans = arr[0];
-        while (e < arr.length) {
-            if(arr[b] == arr[e]){
-                e++;
-                if(e == arr.length-1){
-                    ans = arr[e];
-                    break;
-                }
+        int freq = 0;
+        
+        for(int ele : arr){
+            if(freq == 0){
+                ans = ele;
+            }
+            if(ans == ele){
+                freq ++;
             }
             else{
-                if(e-b > arr.length/2){
-                    ans = arr[b];
-                    break;
-                }
-                else{
-                    b = e;
-                }
+                freq --;
             }
         }
-
         return ans;
     }
     public static void main(String[] args) {
