@@ -1,4 +1,4 @@
-public class solution {
+class solution {
     public static void main(String[] args) {
         int[] nums1 = {1,2,3,4,5,6,7};
         int k1 = 3;
