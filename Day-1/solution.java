@@ -1,4 +1,4 @@
-public class solution {
+class solution {
 
     public static void printArray(int[] arr){
         for(int ele : arr){
